@@ -1,0 +1,100 @@
+/* Vroxia Protocol — Obsidian & Gold Theme */
+
+:root {
+  --ifm-color-primary: #c9a84c;
+  --ifm-color-primary-dark: #b8922e;
+  --ifm-color-primary-darker: #a87e20;
+  --ifm-color-primary-darkest: #7d5e18;
+  --ifm-color-primary-light: #d9bc74;
+  --ifm-color-primary-lighter: #e3ca8e;
+  --ifm-color-primary-lightest: #f0deb0;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(201, 168, 76, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #c9a84c;
+  --ifm-color-primary-dark: #b8922e;
+  --ifm-color-primary-darker: #a87e20;
+  --ifm-color-primary-darkest: #7d5e18;
+  --ifm-color-primary-light: #d9bc74;
+  --ifm-color-primary-lighter: #e3ca8e;
+  --ifm-color-primary-lightest: #f0deb0;
+
+  --ifm-background-color: #0a0a0a;
+  --ifm-background-surface-color: #111111;
+  --ifm-navbar-background-color: #0d0d0d;
+  --ifm-footer-background-color: #080808;
+  --ifm-card-background-color: #141414;
+  --ifm-toc-border-color: #c9a84c33;
+
+  --docusaurus-highlighted-code-line-bg: rgba(201, 168, 76, 0.15);
+}
+
+/* Navbar gold accent */
+.navbar {
+  border-bottom: 1px solid #c9a84c44;
+}
+
+.navbar__title {
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #c9a84c;
+}
+
+/* Sidebar */
+.theme-doc-sidebar-container {
+  border-right: 1px solid #c9a84c22 !important;
+}
+
+/* Headings gold accent */
+.markdown h1,
+.markdown h2 {
+  border-bottom: 1px solid #c9a84c33;
+  padding-bottom: 0.3rem;
+}
+
+/* Hero / landing page */
+.hero {
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1200 100%);
+}
+
+.hero__title {
+  color: #c9a84c;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+}
+
+.hero__subtitle {
+  color: #d9bc74cc;
+}
+
+/* Button styles */
+.button--primary {
+  background-color: #c9a84c;
+  border-color: #c9a84c;
+  color: #0a0a0a;
+  font-weight: 700;
+}
+
+.button--primary:hover {
+  background-color: #d9bc74;
+  border-color: #d9bc74;
+  color: #0a0a0a;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #c9a84c33;
+}
+
+/* Admonition gold highlights */
+.alert--info {
+  border-left-color: #c9a84c;
+}
+
+/* Code blocks */
+pre {
+  border: 1px solid #c9a84c22;
+}
