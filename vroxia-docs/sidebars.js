@@ -2,19 +2,22 @@
 const sidebars = {
   tutorialSidebar: [
     {
-      type: 'doc',
-      id: 'intro',
-      label: 'Introduction',
+      type: 'category',
+      label: 'Protocol',
+      collapsed: false,
+      items: ['intro', 'udsx'],
     },
     {
-      type: 'doc',
-      id: 'udsx',
-      label: 'UDSX Protocol',
+      type: 'category',
+      label: 'Security',
+      collapsed: false,
+      items: ['privacy', 'token-metadata'],
     },
     {
-      type: 'doc',
-      id: 'token-metadata',
-      label: 'Token-2022 Compliance',
+      type: 'category',
+      label: 'Ecosystem',
+      collapsed: false,
+      items: ['latam', 'legal'],
     },
   ],
 };
