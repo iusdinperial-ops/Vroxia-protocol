@@ -19,6 +19,11 @@ const sidebars = {
       collapsed: false,
       items: ['latam', 'legal'],
     },
+    {
+      type: 'doc',
+      id: 'roadmap',
+      label: '🗺 Roadmap',
+    },
   ],
 };
 
