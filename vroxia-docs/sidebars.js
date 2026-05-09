@@ -11,6 +11,11 @@ const sidebars = {
       id: 'udsx',
       label: 'UDSX Protocol',
     },
+    {
+      type: 'doc',
+      id: 'token-metadata',
+      label: 'Token-2022 Compliance',
+    },
   ],
 };
 

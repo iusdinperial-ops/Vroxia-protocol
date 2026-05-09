@@ -1,18 +1,71 @@
-# Dependencies
+# ── Dependencies ──────────────────────────────────────
 node_modules/
 
-# Production build
+# ── Production build ──────────────────────────────────
 build/
 
-# Generated files
+# ── Generated / cache ─────────────────────────────────
 .docusaurus/
 .cache-loader/
 
-# Misc
-.DS_Store
+# ── Environment & secrets ─────────────────────────────
 .env
 .env.local
 .env.production
+.env.*.local
+
+# ── SOLANA KEYPAIRS & WALLETS ─────────────────────────
+# Never commit private keys to version control
+id.json
+id.json.bak
+*-keypair.json
+*_keypair.json
+wallet.json
+wallet*.json
+*.key.json
+solana-keypair*
+phantom-*.json
+ledger-*.json
+burner*.json
+.solana/
+keypairs/
+wallets/
+secrets/
+
+# ── LLC / LEGAL DOCUMENTS ─────────────────────────────
+# Colorado LLC filings, operating agreements, EIN docs
+legal/
+llc/
+corp/
+*.operating-agreement.*
+articles-of-organization*
+ein-confirmation*
+registered-agent*
+operating_agreement*
+Colorado_LLC*
+vroxia-llc*
+*.sos.co.gov.*
+
+# ── Certificates & credentials ────────────────────────
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+*.key
+*.keystore
+*.jks
+
+# ── IDE & OS ──────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Logs ──────────────────────────────────────────────
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+*.log

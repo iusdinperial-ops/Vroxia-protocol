@@ -4,46 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
-    ),
+    icon: '⬡',
+    title: 'Biometric Security',
+    description:
+      'Multi-factor biometric authentication fused with Trusted Execution Environments (TEE). Private keys never leave the device. Threshold signatures require multiple distributed key fragments — no single point of failure.',
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
+    icon: '◈',
+    title: 'UDSX Settlement Layer',
+    description:
+      'Low-volatility wholesale settlement protocol. TWAP-referenced pricing over 15-minute windows eliminates flash-crash exposure. Atomic escrow ensures both counterparties are protected on every operation.',
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    icon: '⬡',
+    title: 'Regulatory-Grade Compliance',
+    description:
+      'KYC/AML Tier-3 and FATF standards built into the protocol layer — not bolted on. On-chain audit proofs available for regulatory inspection across 34 jurisdictions without compromising user privacy.',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({icon, title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+      <div className={styles.featureCard}>
+        <div className={styles.featureIcon}>{icon}</div>
+        <Heading as="h3" className={styles.featureTitle}>{title}</Heading>
+        <p className={styles.featureDesc}>{description}</p>
       </div>
     </div>
   );
@@ -53,6 +39,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <div className={styles.sectionLabel}>Core Protocol</div>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
